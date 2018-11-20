@@ -9,13 +9,14 @@ public class Author extends Person {
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList<String>();
     }
 
+    @SuppressWarnings("unchecked")
     public List<String> publishedBooks() {
         return books;
     }
 
+    @SuppressWarnings("unchecked")
     public void addBook(String book) {
         books.add(book);
     }
